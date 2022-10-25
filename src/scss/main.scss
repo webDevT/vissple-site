@@ -564,3 +564,15 @@ body {
         top: -35vw;
     }
 }
+
+//start sharks section style
+.sharks-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 9.722vw;
+    .section-content {
+        width: 37.500vw;
+    }
+}
+//end sharks section style
