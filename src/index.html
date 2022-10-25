@@ -133,11 +133,17 @@
 	</div>
 
 <!-- end main screen -->
+<div class="hooks">
+	<img src="img/hook.svg" alt="" class="hook1">
+	<img src="img/hook.svg" alt="" class="hook2">
+	<img src="img/hook.svg" alt="" class="hook3">
+	<img src="img/hook.svg" alt="" class="hook4">
+</div>
 
 <!-- start about -->
 	<div class="anchor anchor2 about" id="anchor2">
 		<img src="img/fishes.svg" alt="" class="fishes">
-	<img src="img/hooks.svg" alt="" class="hooks">
+	
 	<img src="img/aquawomen.svg" alt="" class="aquawomen">
 	<img src="img/fish.svg" alt="" class="fish">
 
@@ -374,10 +380,12 @@ $(document).on('scroll', function (){
   if(scroll  > postion && scroll ) {
      $('.line').addClass('fullHeight');
 	 $('.line2').addClass('normalHeight');
+	 $('.hooks').addClass('hooks-why');
  	$('.about .section-content').addClass('slideRight');
 	 $('.fish').addClass('slideLeft');
 	 if(scroll  > postion && scroll + 200 ) {  	
 	 $('.anchor2 .next-section-text').fadeOut(1000);
+	 
 	
 
      }
@@ -388,6 +396,7 @@ $(document).on('scroll', function (){
 		$('.anchor2 .next-section-text').fadeIn(1000);
 		$('.about .section-content').removeClass('slideRight');
 		$('.fish').removeClass('slideLeft');
+		$('.hooks').removeClass('hooks-why');
 
      }
 })
@@ -399,6 +408,7 @@ $(document).on('scroll', function (){
   if(scroll2  > postion2 && scroll2 ) {	 
 	$('.line2').addClass('fullHeight');
 	 $('.line3').addClass('normalHeight');
+	 $('.hooks').addClass('hooks-sharks');
 	 
 	 if(scroll2  > postion2 && scroll2 + 200 ) {  	
 	 $('.anchor3 .next-section-text').fadeOut(1000);
@@ -407,6 +417,7 @@ $(document).on('scroll', function (){
         $('.line2').removeClass('fullHeight');
 		$('.line3').removeClass('normalHeight');
 		$('.anchor3 .next-section-text').fadeIn(1000);
+		$('.hooks').addClass('remove-sharks');
 
      }
 })
@@ -418,6 +429,7 @@ $(document).on('scroll', function (){
   if(scroll3  > postion3 && scroll3 ) {
     $('.line3').addClass('fullHeight');
 	 $('.line4').addClass('normalHeight');
+	 $('.hooks').addClass('hooks-footer');
 	 if(scroll3  > postion3 && scroll3 + 200 ) {  	
 	 $('.anchor4 .next-section-text').fadeOut(1000);
      }
@@ -425,6 +437,7 @@ $(document).on('scroll', function (){
         $('.line3').removeClass('fullHeight');
 		$('.line4').removeClass('normalHeight');
 		$('.anchor4 .next-section-text').fadeIn(1000);
+		$('.hooks').removeClass('hooks-footer');
 		
 
      }

@@ -133,11 +133,17 @@
 	</div>
 
 <!-- end main screen -->
+<div class="hooks">
+	<img src="img/hook.svg" alt="" class="hook1">
+	<img src="img/hook.svg" alt="" class="hook2">
+	<img src="img/hook.svg" alt="" class="hook3">
+	<img src="img/hook.svg" alt="" class="hook4">
+</div>
 
 <!-- start about -->
 	<div class="anchor anchor2 about" id="anchor2">
 		<img src="img/fishes.svg" alt="" class="fishes">
-	<img src="img/hooks.svg" alt="" class="hooks">
+	
 	<img src="img/aquawomen.svg" alt="" class="aquawomen">
 	<img src="img/fish.svg" alt="" class="fish">
 
@@ -185,8 +191,53 @@ Wij bij – EN HR solutions – pakken het anders aan. Onze specialisten op het 
 <!-- end about	 -->
 
 <!-- start anchor 3 -->
-	<div class="anchor anchor3" id="anchor3">
-		
+	<div class="anchor anchor3 why-section" id="anchor3">
+		<div class="section-content">
+			<h2 class="h2">
+				Wat is de reden dat de vis niet wil bijten? 
+			</h2>
+	
+			<div class="section-content__text">
+				<p>
+					De grootste uitdaging op dit moment voor elke recruiter is het 
+aantrekken van het juiste talent. Veel organisaties hebben moeite 
+hun vacatures in te vullen omdat:</p>
+<div class="list">
+	<div class="list-item">
+		<img src="img/tick.svg" alt="">
+		De arbeidsmarkt krap is (veel vacatures en weinig kandidaten); 
+	</div>
+	<div class="list-item">
+		<img src="img/tick.svg" alt="">
+		Het talent voor een andere werkgever kiest; 
+	</div>
+	<div class="list-item">
+		<img src="img/tick.svg" alt="">
+		Het talent niet openstaat om van werkgever te veranderen;
+	</div>
+	<div class="list-item">
+		<img src="img/tick.svg" alt="">
+		Het talent de organisatie snel weer verlaat; 
+	</div>
+	<div class="list-item">
+		<img src="img/tick.svg" alt="">
+		De organisatie het beschikbare talent niet kan vinden, bereiken en/of overtuigen
+	</div>
+</div>
+					<p>
+	
+						Jij staat dus – net als 90% van alle werkgevers – met jouw hengel te vissen naar een vis die maar niet wil bijten en dat heeft consequenties. 
+				</p>
+	
+				<a href="#contact" class="section-content__link">
+					
+					Contacteer ons <span>
+						vrijblijvend voor een kennismakingsgesprek.
+					</span>
+					<img src="img/triangle.svg" alt="">
+				</a>
+			</div>
+		</div>
 		<div class="line2">
 			
 		</div>
@@ -329,10 +380,12 @@ $(document).on('scroll', function (){
   if(scroll  > postion && scroll ) {
      $('.line').addClass('fullHeight');
 	 $('.line2').addClass('normalHeight');
+	 $('.hooks').addClass('hooks-why');
  	$('.about .section-content').addClass('slideRight');
 	 $('.fish').addClass('slideLeft');
 	 if(scroll  > postion && scroll + 200 ) {  	
 	 $('.anchor2 .next-section-text').fadeOut(1000);
+	 
 	
 
      }
@@ -343,6 +396,7 @@ $(document).on('scroll', function (){
 		$('.anchor2 .next-section-text').fadeIn(1000);
 		$('.about .section-content').removeClass('slideRight');
 		$('.fish').removeClass('slideLeft');
+		$('.hooks').removeClass('hooks-why');
 
      }
 })
@@ -354,6 +408,7 @@ $(document).on('scroll', function (){
   if(scroll2  > postion2 && scroll2 ) {	 
 	$('.line2').addClass('fullHeight');
 	 $('.line3').addClass('normalHeight');
+	 $('.hooks').addClass('hooks-sharks');
 	 
 	 if(scroll2  > postion2 && scroll2 + 200 ) {  	
 	 $('.anchor3 .next-section-text').fadeOut(1000);
@@ -362,6 +417,7 @@ $(document).on('scroll', function (){
         $('.line2').removeClass('fullHeight');
 		$('.line3').removeClass('normalHeight');
 		$('.anchor3 .next-section-text').fadeIn(1000);
+		$('.hooks').addClass('remove-sharks');
 
      }
 })
@@ -373,6 +429,7 @@ $(document).on('scroll', function (){
   if(scroll3  > postion3 && scroll3 ) {
     $('.line3').addClass('fullHeight');
 	 $('.line4').addClass('normalHeight');
+	 $('.hooks').addClass('hooks-footer');
 	 if(scroll3  > postion3 && scroll3 + 200 ) {  	
 	 $('.anchor4 .next-section-text').fadeOut(1000);
      }
@@ -380,6 +437,7 @@ $(document).on('scroll', function (){
         $('.line3').removeClass('fullHeight');
 		$('.line4').removeClass('normalHeight');
 		$('.anchor4 .next-section-text').fadeIn(1000);
+		$('.hooks').removeClass('hooks-footer');
 		
 
      }

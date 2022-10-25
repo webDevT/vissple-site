@@ -278,12 +278,14 @@ body {
     top: 5vw;
     left: 19vw;
     width: 23.125vw;
+    z-index: 2;
 }
 .fish {
     position: absolute;
     top: 39vw;
     left: 10.5vw;
     width: 12.639vw;
+    z-index: 2;
 }
 .fishes {
     position: absolute;
@@ -463,6 +465,101 @@ body {
 .why-section {
     display: flex;
     align-items: center;
+    padding-left: 9.653vw;
+    .line__text {
+        transform: rotate(90deg) translateY(40%);
+    }
+    .section-content {
+       width: 39.653vw;
+    }
 }
 //end  why-section style
 
+.hooks {
+    position: fixed;
+    z-index: 1;
+    img {
+        width: 1.4vw;
+    }
+}
+.hook1 {
+    position: absolute;
+    top: -33vw;
+    left: 0;
+    transition: all 2s;
+}
+.hook2 {
+    position: absolute;
+    top: -14vw;
+    left: 9.514vw;
+    transition: all 2s;
+}
+.hook3 {
+    position: absolute;
+    top: -39vw;
+    left: 23.403vw;
+    transition: all 2s;
+}
+.hook4 {
+    position: absolute;
+    top: -43vw;
+    left: 62.083vw;
+    transition: all 2s;
+}
+.hooks.hooks-why {
+    .hook1 {
+        top: -5vw;
+        opacity: 0.5;
+    }
+    .hook2 {
+        top: -28vw;
+        opacity: 0.5;
+    }
+    .hook3 {
+        top: -12vw;
+        opacity: 0.5;
+    }
+    .hook4 {
+        top: -40vw;
+        opacity: 0.5;
+    }
+}
+
+.hooks.hooks-sharks {
+    .hook1 {
+        top: -30vw;
+        opacity: 0.3;
+    }
+    .hook2 {
+        top: -20vw;
+        opacity: 0.3;
+    }
+    .hook3 {
+        top: -25vw;
+        opacity: 0.3;
+    }
+    .hook4 {
+        top: -40vw;
+        opacity: 0.3;
+        top: -18vw;
+    }
+}
+
+.hooks.hooks-footer {
+    .hook1 {
+        top: -32vw;
+        opacity: 0.3;
+    }
+    .hook2 {
+        top: -22vw;
+        opacity: 0.3;
+    }
+    .hook3 {
+        top: -40vw;
+        opacity: 0.3;
+    }
+    .hook4 {
+        opacity: 0.3;
+        top: -35vw;
+    }
+}
