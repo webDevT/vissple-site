@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="3012.508" viewBox="0 0 390 3012.508">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#80ccce"/>
+      <stop offset="1" stop-color="#08a2b8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#036f91"/>
+      <stop offset="1" stop-color="#08a2b8"/>
+    </linearGradient>
+  </defs>
+  <g id="mobile-bg" transform="translate(0 -843)">
+    <g id="Сгруппировать_220" data-name="Сгруппировать 220" transform="translate(0.315 842.728)">
+      <rect id="Прямоугольник_138" data-name="Прямоугольник 138" width="390" height="1182.777" transform="translate(-0.315 1830.003)" fill="#036f91"/>
+      <rect id="Прямоугольник_136" data-name="Прямоугольник 136" width="390" height="887.983" transform="translate(-0.315 0.272)" fill="#80ccce"/>
+      <rect id="Прямоугольник_137" data-name="Прямоугольник 137" width="390" height="953.808" transform="translate(-0.315 888.254)" fill="#08a2b8"/>
+      <rect id="Прямоугольник_139" data-name="Прямоугольник 139" width="390" height="493.324" transform="translate(-0.315 397.921)" fill="url(#linear-gradient)"/>
+      <rect id="Прямоугольник_140" data-name="Прямоугольник 140" width="390" height="490.334" transform="translate(389.685 1855.331) rotate(180)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>
