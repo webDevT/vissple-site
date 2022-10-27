@@ -1,6 +1,6 @@
 $(function(){
     //start smooth scroll
-    $(".main-screen__buttons, .next-section").on("click","a", function (event) {
+    $(".main-screen__buttons, .next-section, .section-content").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;

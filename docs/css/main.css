@@ -1005,3 +1005,7 @@ body {
 .next-section {
   z-index: 999;
 }
+
+.section-content__link:hover {
+  text-decoration: underline;
+}
