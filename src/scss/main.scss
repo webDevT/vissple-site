@@ -249,8 +249,8 @@ body {
 
 .all-content {
     background: url('../img/main-bg.png');
-    background-size: 100vw;
-    background-position: top 54vw center;
+    background-size: cover;
+    background-position: top 44vw center;
     background-repeat: no-repeat;
 }
 .footer {
@@ -779,5 +779,20 @@ body {
     .button.slide {
         transform: translateX(0vw);
 
+    }
+}
+.mobile-fish {
+    display: none;
+}
+.tr {
+    display: none;
+}
+.footer__copy {
+    display: flex;
+    align-items: center;
+    svg {
+        width: 1.111vw;
+        margin-right: 0.7vw;
+        fill: #2a2c36; 
     }
 }
