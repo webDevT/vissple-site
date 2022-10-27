@@ -508,4 +508,10 @@
   .all-content {
     overflow: hidden;
   }
+  .seaweed {
+    top: 7vw;
+  }
+  .section-content__link {
+    text-decoration: underline;
+  }
 }

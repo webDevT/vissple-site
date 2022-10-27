@@ -1001,3 +1001,7 @@ body {
   margin-right: 0.7vw;
   fill: #2a2c36;
 }
+
+.next-section {
+  z-index: 999;
+}
