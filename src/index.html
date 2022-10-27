@@ -16,34 +16,6 @@
 <body>
 
 
-<!-- <div id="fullpage">
-    <div class="section">
-		
-<section class="main-screen">
-	<img src="img/right-hill.png" alt="" class="right-hill">
-	<img src="img/trees.png" alt="" class="trees">
-	<img src="img/fisherman.svg" alt="" class="fisherman">
-	<img src="img/raft.svg" alt="" class="raft">
-	<img src="img/big-fishermen.svg" alt="" class="big-fishermen">
-	<img src="img/left-fisherman.svg" alt="" class="left-fisherman">
-	<img src="img/grass.svg" alt="" class="grass">
-	
-	<div class="container-fluid">
-		
-	</div>
-</section>
-</div>
-	
-    <div class="section">
-      section2
-    </div>
-	
-    <div class="section">Section 3</div>
-    <div class="section">Section 4</div>
-</div> -->
-
-<!-- start main screen -->
-
 <!-- end main screen -->
 
 <div class="all-content">
@@ -192,6 +164,9 @@ Wij bij – EN HR solutions – pakken het anders aan. Onze specialisten op het 
 
 <!-- start anchor 3 -->
 	<div class="anchor anchor3 why-section" id="anchor3">
+		<img src="img/loop-fish.svg" alt="" class="loop-fish">
+		<img src="img/loop.png" alt="" class="loop">
+		<img src="img/shark.svg" alt="" class="shark">
 		<div class="section-content">
 			<h2 class="h2">
 				Wat is de reden dat de vis niet wil bijten? 
@@ -261,7 +236,9 @@ hun vacatures in te vullen omdat:</p>
 
 <!-- start sharks-section -->
 	<div class="anchor anchor4 sharks-section" id="anchor4">
-	
+	<div class="sharks-wrapper">
+
+
 		<div class="section-content">
 			<h2 class="h2">
 				Het uitgooien van je hengel is niet langer voldoende!
@@ -315,6 +292,15 @@ hun vacatures in te vullen omdat:</p>
 			</div>
 			
 			<div class="line-mobile"></div>
+
+			<img src="img/sharks-fishes.svg" alt="" class="sharks-fishes">
+			<img src="img/ho.svg" alt="" class="ho">
+			<img src="img/rif.svg" alt="" class="rif">
+			
+			<img src="img/sharks.svg" alt="" class="sharks">
+			<img src="img/rif1.svg" alt="" class="rif1">
+			<img src="img/rif-fish.svg" alt="" class="rif-fish">
+	</div>
 	</div>
 <!-- end anchor 4 -->
 
@@ -324,6 +310,49 @@ hun vacatures in te vullen omdat:</p>
 		<div class="line4" id="anchor5">
 			
 		</div>
+
+		<img src="img/treausers.svg" alt="" class="treausers">
+
+		<img src="img/seaweed.svg" alt="" class="seaweed">
+
+		<img src="img/hedgehog-fish.png" alt="" class="hedgehog-fish">
+		<div class="seaweeds-wrapper">
+				<img src="img/seaweeds2.svg" alt="" class="seaweeds2">
+		</div>
+	
+		
+		<div class="footer__content">
+			<div class="footer__title">
+				SAMEN EEN DUIK NEMEN?
+			</div>
+			<p>
+				Stel dat onze specialisten op het gebied van recruitment en arbeidsmarktcommunicatie jou
+met bovenstaande zouden kunnen realiseren. Ben je dan geïnteresseerd om kennis te maken? 
+			</p>
+			<a href="" class="button">
+				Ja, absoluut!
+			</a>
+		</div>
+
+		<div class="footer__bottom">
+			<div class="footer__copy">
+				<img src="img/copyright.svg" alt="">
+				2022  enhrsolutions.com
+			</div>
+
+			<div class="footer__menu">
+				<a href="" class="footer__link">
+					Privacaybeleid
+				</a>
+				<a href="" class="footer__link">
+					Disclaimer
+				</a>
+				<a href="" class="footer__link">
+					Algemene voorwaarden
+				</a>
+			</div>
+		</div>
+		
 		</div>
 <!-- end footer		 -->
 </div>
@@ -393,7 +422,77 @@ scale: 1.7,
 overflow: true
 });
 
+var image = document.getElementsByClassName('loop-fish');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'right',
+scale: 1.7,
+overflow: true
+});
 
+var image = document.getElementsByClassName('loop');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'left',
+scale: 1.4,
+overflow: true
+});
+
+var image = document.getElementsByClassName('shark');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'left',
+scale: 1.7,
+overflow: true
+});
+
+var image = document.getElementsByClassName('sharks');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'right',
+scale: 1.7,
+overflow: true
+});
+
+var image = document.getElementsByClassName('rif');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'right',
+scale: 1.2,
+overflow: true
+});
+
+var image = document.getElementsByClassName('rif-fish');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'left',
+scale: 1.2,
+overflow: true
+});
+
+var image = document.getElementsByClassName('seaweeds2');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'up',
+scale: 1.7,
+overflow: true
+});
+
+var image = document.getElementsByClassName('hedgehog-fish');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'up',
+scale: 1.7,
+overflow: true
+});
+
+var image = document.getElementsByClassName('treausers');
+new simpleParallax(image, {
+delay: 0.5,
+orientation: 'left',
+scale: 1.7,
+overflow: true
+});
 
 </script>
 
@@ -421,6 +520,9 @@ $(document).on('scroll', function (){
 	 $('.fish').addClass('slideLeft');
 	 if(scroll  > postion && scroll + 200 ) {  	
 	 $('.anchor2 .next-section-text').fadeOut(1000);
+	 $('.why-section .section-content').addClass('slideWhy');
+	 //$('.loop').addClass('slideLoop');
+	 //$('.loop-fish').addClass('slideFish');
 	 
 	
 
@@ -433,6 +535,10 @@ $(document).on('scroll', function (){
 		$('.about .section-content').removeClass('slideRight');
 		$('.fish').removeClass('slideLeft');
 		$('.hooks').removeClass('hooks-why');
+		$('.loop').removeClass('slideLoop');
+		$('.why-section .section-content').removeClass('slideWhy');
+		//$('.loop-fish').removeClass('slideFish');
+
 
      }
 })
@@ -445,6 +551,11 @@ $(document).on('scroll', function (){
 	$('.line2').addClass('fullHeight');
 	 $('.line3').addClass('normalHeight');
 	 $('.hooks').addClass('hooks-sharks');
+	 $('.sharks-section .section-content .h2').addClass('slideShark');
+		$('.sharks-section .section-content p').addClass('slideShark');
+	
+	
+	 
 	 
 	 if(scroll2  > postion2 && scroll2 + 200 ) {  	
 	 $('.anchor3 .next-section-text').fadeOut(1000);
@@ -454,6 +565,8 @@ $(document).on('scroll', function (){
 		$('.line3').removeClass('normalHeight');
 		$('.anchor3 .next-section-text').fadeIn(1000);
 		$('.hooks').removeClass('hooks-sharks');
+		$('.sharks-section .section-content .h2').removeClass('slideShark');
+		$('.sharks-section .section-content p').removeClass('slideShark');
 
      }
 })
@@ -465,7 +578,12 @@ $(document).on('scroll', function (){
   if(scroll3  > postion3 && scroll3 ) {
     $('.line3').addClass('fullHeight');
 	 $('.line4').addClass('normalHeight');
-	 $('.hooks').addClass('hooks-footer');
+	 $('.section-content__link').addClass('fade');
+	 $('.seaweed').addClass('scale');
+	 $('.footer .footer__title').addClass('slide');
+	 $('.footer .button').addClass('slide');
+	 
+	 section-content__link
 	 if(scroll3  > postion3 && scroll3 + 200 ) {  	
 	 $('.anchor4 .next-section-text').fadeOut(1000);
      }
@@ -474,10 +592,17 @@ $(document).on('scroll', function (){
 		$('.line4').removeClass('normalHeight');
 		$('.anchor4 .next-section-text').fadeIn(1000);
 		$('.hooks').removeClass('hooks-footer');
+		$('.section-content__link').removeClass('fade');
+		$('.seaweed').removeClass('scale');
+		$('.footer .footer__title').removeClass('slide');
+	 $('.footer .button').removeClass('slide');
 		
 
      }
 })
+
+
+
 
 </script>
 

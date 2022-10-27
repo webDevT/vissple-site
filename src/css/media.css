@@ -194,7 +194,7 @@
   }
   .all-content {
     background: url("../img/mobile-bg.svg");
-    background-size: 100vw;
+    background-size: cover;
   }
   .line,
   .line2,
@@ -277,5 +277,67 @@
     left: -125vw;
     top: 200vw;
     width: 220.486vw;
+  }
+  .slideRight {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .anchor3 {
+    overflow: hidden;
+  }
+  .why-section .section-content,
+  .sharks-section .section-content {
+    width: 100%;
+  }
+  .slideWhy {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .bubles {
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+  }
+  .bubles.anim {
+    overflow: hidden;
+    width: 100%;
+  }
+  .anchor2 {
+    overflow: hidden;
+  }
+  .main-screen {
+    overflow: hidden;
+  }
+  .why-section {
+    padding-right: 4.306vw;
+  }
+  .why-section .section-content.slideWhy {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .why-section .section-content {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .loop {
+    width: 120vw;
+    right: -76vw;
+    top: 45vw;
+    opacity: 0.71;
+  }
+  .why-section {
+    background: url("../img/rock.svg");
+    background-repeat: no-repeat;
+    background-position: right -26vw top 50vw;
+    padding-bottom: 40vw;
+  }
+  .loop-fish {
+    width: 210vw;
+    top: 133vw;
+    left: 11vw;
   }
 }

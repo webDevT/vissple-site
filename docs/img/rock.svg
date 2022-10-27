@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="262.944" height="660.764" viewBox="0 0 262.944 660.764" style="opacity: 0.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.056" x2="-0.059" y2="1.039" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6097b9"/>
+      <stop offset="1" stop-color="#366785" stop-opacity="0.769"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Контур_1797" data-name="Контур 1797" d="M-13258.43-4904.752h-160.207l10.181,43.717,119.841,551.731Z" transform="translate(13418.637 4904.752)" fill="#012737"/>
+    </clipPath>
+  </defs>
+  <g id="rock" transform="translate(0)">
+    <g id="Сгруппировать_218" data-name="Сгруппировать 218">
+      <path id="Контур_1794" data-name="Контур 1794" d="M-13770.738-4904.752l-105.053,40.934-11.932,20.341-101.609,82.718,42.8,135.477,19.046,22.172v45.049l94.308,154.295v26.97l63.18,115.18Z" transform="translate(13989.332 4922.379)" fill="#0e3248"/>
+      <path id="Контур_1796" data-name="Контур 1796" d="M-13761.874-4926.147l-123.085,52.8-58.264,77.681,64.834-52.257,9.426-18.1,107.089-42.923Z" transform="translate(13981.211 4926.147)" fill="url(#linear-gradient)"/>
+      <g id="Группа_масок_4" data-name="Группа масок 4" transform="translate(102.738 17.627)" clip-path="url(#clip-path)">
+        <path id="Контур_1798" data-name="Контур 1798" d="M-13770.738-4904.752l-105.053,40.934-11.932,20.341-101.609,82.718,42.8,135.477,19.046,22.172v45.049l94.308,154.295v26.97l63.18,115.18Z" transform="translate(13886.595 4904.752)" fill="#012737"/>
+      </g>
+      <path id="Контур_1795" data-name="Контур 1795" d="M-13780.315-4674.04l-156.157,91.293,19.418,22.183Z" transform="translate(13980.023 4881.753)" fill="#010609"/>
+      <path id="Пересечение_1" data-name="Пересечение 1" d="M94.089,266.161V239.191L0,85.252l.129-.707L156.829,0l.44,381.341Z" transform="translate(62.067 279.423)" fill="#fff" opacity="0.071"/>
+    </g>
+    <g id="Сгруппировать_219" data-name="Сгруппировать 219" transform="translate(21.958 0)" opacity="0.07">
+      <path id="Объединение_2" data-name="Объединение 2" d="M0,0H0V1.034L.127,110.07h0l.31,268.647,0,2.626h0l.3,261.8h0l11.734-4.572L0,643.566v17.2l123.085-52.8,58.263-77.681L154.533,551.9l64.8-52.755-42.8-135.477-1.341-1.561.594-.348-18.3-20.9V296.446L63.18,142.15V115.18L0,0ZM110.082,594.895l-2.993,5.748-.495.2Z" transform="translate(219.337 660.764) rotate(180)" fill="#40dedd"/>
+    </g>
+  </g>
+</svg>
