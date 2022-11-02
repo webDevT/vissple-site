@@ -11,7 +11,7 @@ $(function(){
     //start scroll by section
     if($(window).width() > 768) {
     var anchors = [];
-	var currentAnchor = -1;
+	var currentAnchor = 0;
 	var isAnimating  = false;
 	$(function(){
 		function updateAnchors() {
