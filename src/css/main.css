@@ -17,7 +17,7 @@ body {
   min-height: 70vw;
   background: url("../img/ms.png");
   background-size: 100vw;
-  background-position: center top -11vw;
+  background-position: center top -12vw;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -62,7 +62,7 @@ body {
   width: 29.167vw;
   position: absolute;
   left: 50vw;
-  top: 23.5vw;
+  top: 25.5vw;
 }
 
 .raft {
@@ -136,35 +136,33 @@ body {
 }
 
 .main-title {
-  font-size: 5vw;
-  margin-left: 27vw;
-  margin-right: auto;
-  display: block;
-  width: 61vw;
-  padding-top: 3vw;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+  margin-left: 23.958vw;
+  font-family: "Rubik", sans-serif;
+  padding-top: 2vw;
+  text-transform: uppercase;
+}
+
+.main-title__blue {
+  font-size: 4.375vw;
+  font-weight: 500;
+  color: #1ECDF5;
+  display: block;
+  line-height: 0.9;
+}
+
+.main-title__big {
+  font-size: 8.750vw;
+  font-weight: 700;
+  line-height: 0.85;
 }
 
 .main-title.anim {
   -webkit-transform: translateY(-20%);
       -ms-transform: translateY(-20%);
           transform: translateY(-20%);
-}
-
-.main-title__big {
-  font-size: 11vw;
-  line-height: 0.5;
-  font-weight: 700;
-}
-
-.main-title__big--left {
-  margin-left: 1.5vw;
-}
-
-.main-title__big--first {
-  margin-left: -2vw;
 }
 
 .for {
@@ -220,7 +218,9 @@ body {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  background: #1E202A;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e202a), color-stop(0.6%, #1e202a), to(#323439));
+  background: -o-linear-gradient(#1e202a 0%, #1e202a 0.6%, #323439 100%);
+  background: linear-gradient(#1e202a 0%, #1e202a 0.6%, #323439 100%);
   color: #fff;
   border-radius: 1.736vw;
   margin: 0 1.250vw;
@@ -229,20 +229,21 @@ body {
 
 .button:hover {
   color: #fff;
+  opacity: 0.89;
 }
 
 .button--white {
   background: #fff;
   border: 0.208vw solid #5fc9f0;
   color: #18CCF5;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .button--white:hover {
-  background: #065C78;
-  border-color: #065C78;
+  background: -webkit-gradient(linear, left top, left bottom, from(#65d6ee), to(#3cc6e3));
+  background: -o-linear-gradient(#65d6ee 0%, #3cc6e3 100%);
+  background: linear-gradient(#65d6ee 0%, #3cc6e3 100%);
+  border: none;
+  opacity: 1;
 }
 
 .mobile-menu {
@@ -287,8 +288,8 @@ body {
 
 .all-content {
   background: url("../img/main-bg.png");
-  background-size: cover;
-  background-position: top 44vw center;
+  background-size: 100vw;
+  background-position: top 57vw center;
   background-repeat: no-repeat;
 }
 
@@ -358,8 +359,11 @@ body {
 }
 
 .h2 {
-  font-size: 2.569vw;
+  font-size: 2.153vw;
   font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: "Rubik", sans-serif;
 }
 
 .section-content__link {
@@ -623,9 +627,10 @@ body {
 
 .loop {
   position: absolute;
-  top: -12vw;
-  right: -30vw;
+  top: -13vw;
+  right: -33vw;
   width: 80vw;
+  z-index: 9;
 }
 
 .loop.slideLoop {
@@ -722,23 +727,23 @@ body {
 }
 
 .hooks.hooks-footer .hook1 {
-  top: -32vw;
+  top: -40vw;
   opacity: 0.3;
 }
 
 .hooks.hooks-footer .hook2 {
-  top: -22vw;
+  top: -38vw;
   opacity: 0.3;
 }
 
 .hooks.hooks-footer .hook3 {
-  top: -40vw;
+  top: -50vw;
   opacity: 0.3;
 }
 
 .hooks.hooks-footer .hook4 {
   opacity: 0.3;
-  top: -35vw;
+  top: -45vw;
 }
 
 .list-item {
@@ -802,7 +807,7 @@ body {
 
 .rif {
   position: absolute;
-  left: -40.278vw;
+  left: -38.3vw;
   bottom: -36.708vw;
   width: 112.014vw;
 }
@@ -1009,3 +1014,14 @@ body {
 .section-content__link:hover {
   text-decoration: underline;
 }
+
+.sub-title {
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.111vw;
+  color: #2f2e41;
+  line-height: 1;
+}
+
+/* width */
