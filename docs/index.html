@@ -362,7 +362,7 @@ met bovenstaande zouden kunnen realiseren. Ben je dan geïnteresseerd om kennis 
 		</div>
 <!-- end footer		 -->
 </div>
-
+<div class="scroll"></div>
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -514,13 +514,40 @@ overflow: true
 
 <script>
 
+
+$(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+      
+		$('.scroll').addClass('scroll-1');
+		
+        }
+        else{
+			
+			$('.scroll').removeClass('scroll-1');
+		}
+        });
+// 		$(window).scroll(function() {
+//         if ($(this).scrollTop() < 100){
+      
+// 		$('.scroll').removeClass('scroll-1');
+		
+//         }
+//         else{
+			
+			
+// 		}
+//         });
+
+
 $(window).scroll(function() {
         if ($(this).scrollTop() > 100){
         $('.line').addClass("normalHeight");
 		
+		
         }
         else{
 			$('.line').removeClass("normalHeight");
+		
 		}
         });
 
@@ -534,9 +561,12 @@ $(document).on('scroll', function (){
 	 $('.hooks').addClass('hooks-why');
  	$('.about .section-content').addClass('slideRight');
 	 $('.fish').addClass('slideLeft');
+	 $('.scroll').addClass('scroll-2');
 	 if(scroll  > postion && scroll + 200 ) {  	
 	 $('.anchor2 .next-section-text').fadeOut(1000);
 	 $('.why-section .section-content').addClass('slideWhy');
+	
+	 $('.scroll').addClass('scroll-2');
 	 //$('.loop').addClass('slideLoop');
 	 //$('.loop-fish').addClass('slideFish');
 	 
@@ -553,6 +583,8 @@ $(document).on('scroll', function (){
 		$('.hooks').removeClass('hooks-why');
 		$('.loop').removeClass('slideLoop');
 		$('.why-section .section-content').removeClass('slideWhy');
+		$('.scroll').removeClass('scroll-2');
+		
 		//$('.loop-fish').removeClass('slideFish');
 
 
@@ -569,6 +601,9 @@ $(document).on('scroll', function (){
 	 $('.hooks').addClass('hooks-sharks');
 	 $('.sharks-section .section-content .h2').addClass('slideShark');
 		$('.sharks-section .section-content p').addClass('slideShark');
+		$('.scroll').addClass('scroll-3');
+	
+		
 	
 	
 	 
@@ -583,6 +618,8 @@ $(document).on('scroll', function (){
 		$('.hooks').removeClass('hooks-sharks');
 		$('.sharks-section .section-content .h2').removeClass('slideShark');
 		$('.sharks-section .section-content p').removeClass('slideShark');
+		$('.scroll').removeClass('scroll-3');
+		
 
      }
 })
@@ -599,6 +636,7 @@ $(document).on('scroll', function (){
 	 $('.footer .footer__title').addClass('slide');
 	 $('.footer .button').addClass('slide');
 	 $('.hooks').addClass('hooks-footer');
+	 $('.scroll').addClass('scroll-4');
 	 
 	
 	 if(scroll3  > postion3 && scroll3 + 200 ) {  	
@@ -613,6 +651,7 @@ $(document).on('scroll', function (){
 		$('.seaweed').removeClass('scale');
 		$('.footer .footer__title').removeClass('slide');
 	 $('.footer .button').removeClass('slide');
+	 $('.scroll').removeClass('scroll-4');
 		
 
      }

@@ -1024,4 +1024,37 @@ body {
   line-height: 1;
 }
 
+.scroll {
+  width: 10px;
+  height: 167px;
+  background: #fff;
+  opacity: 0.5;
+  position: fixed;
+  border-radius: 5px;
+  top: 2.986vw;
+  right: 1vw;
+  z-index: 9999;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.scroll.scroll-1 {
+  top: 10vw;
+}
+
+.scroll.scroll-2 {
+  top: 20vw;
+}
+
+.scroll.scroll-3 {
+  top: 30vw;
+  opacity: 0.5;
+}
+
+.scroll.scroll-4 {
+  opacity: 0;
+}
+
+/* width */
 /* width */

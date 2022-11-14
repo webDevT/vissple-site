@@ -34,7 +34,7 @@ $(function(){
 			}
 			if( currentAnchor > (anchors.length - 1) 
 			   || currentAnchor < 0 ) {
-				currentAnchor = 0;
+				currentAnchor = 4;
 			}
 
 			
