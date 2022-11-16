@@ -520,5 +520,20 @@
     .scroll {
         display: none;
     }
-     
+    .rc {
+        display: none;
+    }
+    .footer__link,
+    .footer__link:nth-child(2) {
+        color: #2a2c36;
+    }
+    .footer .footer__title,
+    .footer__content p,
+    .footer .button,
+    .footer__copy {
+        color: #2a2c36;
+    }
+    .footer__copy svg {
+        fill: #2a2c36;
+    }
 }

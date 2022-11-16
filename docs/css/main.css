@@ -288,7 +288,7 @@ body {
 
 .all-content {
   background: url("../img/main-bg.png");
-  background-size: 100vw;
+  background-size: cover;
   background-position: top 57vw center;
   background-repeat: no-repeat;
 }
@@ -484,7 +484,7 @@ body {
 }
 
 .line4.normalHeight {
-  height: 7vw;
+  height: 4vw;
 }
 
 .line.fullHeight {
@@ -627,10 +627,22 @@ body {
 
 .loop {
   position: absolute;
-  top: -13vw;
-  right: -33vw;
-  width: 80vw;
+  top: -14vw;
+  right: -33.8vw;
+  width: 85.5vw;
   z-index: 9;
+  -webkit-transition: all 4s;
+  -o-transition: all 4s;
+  transition: all 4s;
+  -webkit-transform: translateX(20%);
+      -ms-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.loop.active {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .loop.slideLoop {
@@ -732,7 +744,7 @@ body {
 }
 
 .hooks.hooks-footer .hook2 {
-  top: -38vw;
+  top: -34vw;
   opacity: 0.3;
 }
 
@@ -845,7 +857,7 @@ body {
 
 .treausers {
   position: absolute;
-  right: 6.944vw;
+  right: 7vw;
   top: 0;
   width: 31.319vw;
 }
@@ -861,13 +873,26 @@ body {
   position: absolute;
   left: 45.6%;
   width: 10vw;
+  top: -3vw;
 }
 
 .seaweeds2 {
-  width: 40.278vw;
-  right: -5vw;
-  bottom: -7vw;
+  width: 48vw;
+  right: -7vw;
+  bottom: -11vw;
   position: relative;
+  -webkit-transform: translateY(10vw);
+      -ms-transform: translateY(10vw);
+          transform: translateY(10vw);
+  -webkit-transition: all 3.5s;
+  -o-transition: all 3.5s;
+  transition: all 3.5s;
+}
+
+.seaweeds2.active {
+  -webkit-transform: translateY(0vw);
+      -ms-transform: translateY(0vw);
+          transform: translateY(0vw);
 }
 
 .seaweeds-wrapper {
@@ -1054,6 +1079,47 @@ body {
 
 .scroll.scroll-4 {
   opacity: 0;
+}
+
+.circles2 {
+  position: absolute;
+  top: -1.389vw;
+  left: 1.389vw;
+  width: 41.458vw;
+}
+
+.rc {
+  position: absolute;
+  top: -6.528vw;
+  right: 0;
+  width: 38.958vw;
+}
+
+.fs {
+  position: absolute;
+  top: 24.6vw;
+  left: 46.528vw;
+}
+
+.footer .button {
+  background: #18CCF5;
+  margin-left: 0;
+}
+
+.footer__sub-title {
+  font-size: 1.736vw;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #fff;
+}
+
+.footer .footer__title {
+  line-height: 1;
+}
+
+.footer__link:nth-child(2) {
+  color: #fff;
 }
 
 /* width */

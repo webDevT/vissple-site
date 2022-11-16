@@ -103,7 +103,7 @@ niet bijten?
 <!-- start about -->
 	<div class="anchor anchor2 about" id="anchor2">
 		<img src="img/fishes.svg" alt="" class="fishes">
-	
+		<img src="img/circles2.svg" alt="" class="circles2">
 	<img src="img/aquawomen.svg" alt="" class="aquawomen">
 	<img src="img/fish.svg" alt="" class="fish">
 
@@ -155,6 +155,7 @@ Wij bij – EN HR solutions – pakken het anders aan. Onze specialisten op het 
 
 <!-- start anchor 3 -->
 	<div class="anchor anchor3 why-section" id="anchor3">
+		<img src="img/rc.png" alt="" class="rc">
 		<img src="img/loop-fish.svg" alt="" class="loop-fish">
 		<img src="img/loop.png" alt="" class="loop">
 		<img src="img/shark.svg" alt="" class="shark">
@@ -230,6 +231,7 @@ hun vacatures in te vullen omdat:</p>
 
 <!-- start sharks-section -->
 	<div class="anchor anchor4 sharks-section" id="anchor4">
+		<img src="img/fs.svg" alt="" class="fs">
 	<div class="sharks-wrapper">
 
 		
@@ -324,6 +326,9 @@ hun vacatures in te vullen omdat:</p>
 	
 		
 		<div class="footer__content">
+			<div class="footer__sub-title">
+				WAR FOR TALENT
+			</div>
 			<div class="footer__title">
 				SAMEN EEN DUIK NEMEN?
 			</div>
@@ -437,13 +442,13 @@ scale: 1.7,
 overflow: true
 });
 
-var image = document.getElementsByClassName('loop');
-new simpleParallax(image, {
-delay: 0.5,
-orientation: 'left',
-scale: 1.4,
-overflow: true
-});
+// var image = document.getElementsByClassName('loop');
+// new simpleParallax(image, {
+// delay: 0.5,
+// orientation: 'left',
+// scale: 1.4,
+// overflow: true
+// });
 
 var image = document.getElementsByClassName('shark');
 new simpleParallax(image, {
@@ -477,13 +482,13 @@ scale: 1.2,
 overflow: true
 });
 
-var image = document.getElementsByClassName('seaweeds2');
-new simpleParallax(image, {
-delay: 0.5,
-orientation: 'up',
-scale: 1.7,
-overflow: true
-});
+// var image = document.getElementsByClassName('seaweeds2');
+// new simpleParallax(image, {
+// delay: 0.5,
+// orientation: 'up',
+// scale: 1.7,
+// overflow: true
+// });
 
 var image = document.getElementsByClassName('hedgehog-fish');
 new simpleParallax(image, {
@@ -562,9 +567,11 @@ $(document).on('scroll', function (){
  	$('.about .section-content').addClass('slideRight');
 	 $('.fish').addClass('slideLeft');
 	 $('.scroll').addClass('scroll-2');
+	 $('.loop').addClass('active');
 	 if(scroll  > postion && scroll + 200 ) {  	
 	 $('.anchor2 .next-section-text').fadeOut(1000);
 	 $('.why-section .section-content').addClass('slideWhy');
+	 
 	
 	 $('.scroll').addClass('scroll-2');
 	 //$('.loop').addClass('slideLoop');
@@ -584,6 +591,7 @@ $(document).on('scroll', function (){
 		$('.loop').removeClass('slideLoop');
 		$('.why-section .section-content').removeClass('slideWhy');
 		$('.scroll').removeClass('scroll-2');
+		$('.loop').removeClass('active');
 		
 		//$('.loop-fish').removeClass('slideFish');
 
@@ -602,6 +610,7 @@ $(document).on('scroll', function (){
 	 $('.sharks-section .section-content .h2').addClass('slideShark');
 		$('.sharks-section .section-content p').addClass('slideShark');
 		$('.scroll').addClass('scroll-3');
+		//$('.loop').removeClass('active');
 	
 		
 	
@@ -637,6 +646,8 @@ $(document).on('scroll', function (){
 	 $('.footer .button').addClass('slide');
 	 $('.hooks').addClass('hooks-footer');
 	 $('.scroll').addClass('scroll-4');
+	 $('.seaweeds2').addClass('active');
+	 $('.list').fadeOut();
 	 
 	
 	 if(scroll3  > postion3 && scroll3 + 200 ) {  	
@@ -652,6 +663,8 @@ $(document).on('scroll', function (){
 		$('.footer .footer__title').removeClass('slide');
 	 $('.footer .button').removeClass('slide');
 	 $('.scroll').removeClass('scroll-4');
+	 $('.seaweeds2').removeClass('active');
+	 $('.list').fadeIn();
 		
 
      }
